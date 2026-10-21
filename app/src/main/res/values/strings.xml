@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Конвертер Величин</string>
+    <string name="main_title">Выберите категорию</string>
+    <string name="btn_length">Длина (Метры в Сантиметры)</string>
+    <string name="btn_mass">Масса (КГ в Граммы)</string>
+    <string name="btn_currency">Валюта (USD в KZT)</string>
+    <string name="btn_help">Справка</string>
+
+    <string name="hint_input">Введите значение</string>
+    <string name="btn_convert">Конвертировать</string>
+    <string name="tv_result">Результат: </string>
+
+    <string name="help_title">Справка по приложению</string>
+    <string name="help_text">Это приложение предназначено для базовой конвертации величин. Выберите категорию на главном экране и введите число.</string>
+    <string name="btn_back">Назад</string>
+</resources>

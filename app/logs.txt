@@ -1,0 +1,415 @@
+2026-10-20 20:51:57.310  2135-2135  libc                    com.example.practice1                A  Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2135 (android.hardwar), pid 2135 (android.hardwar)
+2026-10-20 20:52:22.356  2703-2703  libc                    com.example.practice1                A  Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2703 (android.hardwar), pid 2703 (android.hardwar)
+2026-10-20 21:44:26.974  2289-2289  libc                    com.example.practice1                A  Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2289 (android.hardwar), pid 2289 (android.hardwar)
+2026-10-21 10:16:46.481  2259-2259  ActivityThread          com.example.practice1                D  Set OS env TMPDIR to /data/user_de/0/com.google.android.nfc/cache
+2026-10-21 10:16:46.695  2288-2288  DEBUG                   com.example.practice1                A  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+2026-10-21 10:16:46.695  2288-2288  DEBUG                   com.example.practice1                A  Build fingerprint: 'google/sdk_gphone16k_arm64/emu64a16k:17/CP41.260831.007/16416850:user/dev-keys'
+                                                                                                    Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+                                                                                                    Revision: '0'
+                                                                                                    ABI: 'arm64'
+                                                                                                    Timestamp: 2026-10-21 10:16:46.631896286+0500
+                                                                                                    Process uptime: 1s
+                                                                                                    Page size: 16384 bytes
+2026-10-21 10:16:46.696  2288-2288  DEBUG                   com.example.practice1                A  Executable: /vendor/bin/hw/android.hardware.uwb-service
+                                                                                                    Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+                                                                                                    pid: 2273, ppid: 1, tid: 2273, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+                                                                                                    uid: 1083
+                                                                                                    tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+                                                                                                    pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+                                                                                                    signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+                                                                                                    Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+
+                                                                                                        x0  0000000000000000  x1  00000000000008e1  x2  0000000000000006  x3  00007fffdea26350
+                                                                                                        x4  6462687564631f6b  x5  6462687564631f6b  x6  6462687564631f6b  x7  7f7f7f7f7f7f7f7f
+                                                                                                        x8  00000000000000f0  x9  40154b9e02b82918  x10 000000ff00000020  x11 000000000006c000
+                                                                                                        x12 000000007fffffff  x13 000000000031d0e6  x14 000000528a38cc56  x15 0000000029aaaaab
+                                                                                                        x16 00007f10b15136f8  x17 00007f10b14f7fc0  x18 00007f10b6d6c000  x19 00000000000008e1
+                                                                                                        x20 00000000000008e1  x21 00000000ffffffff  x22 00007fffdea264e0  x23 00005ebfe3e129c0
+                                                                                                        x24 00005ebfe3e18600  x25 00007fffdea26c70  x26 00007fffdea26680  x27 00007f10b669ae80
+                                                                                                        x28 00007fffdea27468  x29 00007fffdea263d0
+                                                                                                        lr  00007f10b14948ec  sp  00007fffdea26350  pc  00007f10b1494910  pst 0000000000001000
+                                                                                                        esr 0000000000000000  vg  0000000000000000
+
+                                                                                                    18 total frames
+                                                                                                    backtrace:
+                                                                                                          #00 pc 0000000000078910  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: c4b1f4a2273ae85d0a136e4d0a3aafa0)
+                                                                                                          #01 pc 000000000003e284  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #02 pc 000000000003bda8  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #03 pc 00000000000387d8  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #04 pc 000000000002cf48  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+16) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #05 pc 00000000000387cc  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #06 pc 000000000003c0b0  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+276) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #07 pc 0000000000037f24  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+60) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #08 pc 00000000000387f8  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+28) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #09 pc 0000000000025f2c  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+36) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #10 pc 0000000000025df8  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+72) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #11 pc 000000000006209c  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+6288) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #12 pc 0000000000065e18  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+2712) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #13 pc 0000000000063940  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+540) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+2026-10-21 10:16:46.696  2288-2288  DEBUG                   com.example.practice1                A        #14 pc 000000000006011c  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+32) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #15 pc 000000000003b6b0  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+620) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #16 pc 00000000000687a0  /vendor/bin/hw/android.hardware.uwb-service (main+56) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #17 pc 000000000006fae4  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: c4b1f4a2273ae85d0a136e4d0a3aafa0)
+
+                                                                                                    Note: To display stack pointer information, use the pbtombstone tool:
+                                                                                                            pbtombstone --display-sp tombstone_XX.pb
+2026-10-21 10:40:52.693  4986-4986  ActivityThread          com.example.practice1                D  Set OS env TMPDIR to /data/user_de/0/com.google.android.nfc/cache
+2026-10-21 12:53:26.056  2137-2137  libc                    com.example.practice1                A  Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2137 (android.hardwar), pid 2137 (android.hardwar)
+2026-10-21 12:53:26.081  2146-2146  DEBUG                   com.example.practice1                A  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+2026-10-21 12:53:26.081  2146-2146  DEBUG                   com.example.practice1                A  Build fingerprint: 'google/sdk_gphone16k_arm64/emu64a16k:17/CP41.260831.007/16416850:user/dev-keys'
+                                                                                                    Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+                                                                                                    Revision: '0'
+                                                                                                    ABI: 'arm64'
+                                                                                                    Timestamp: 2026-10-21 12:53:26.074718810+0500
+                                                                                                    Process uptime: 1s
+                                                                                                    Page size: 16384 bytes
+2026-10-21 12:53:26.081  2146-2146  DEBUG                   com.example.practice1                A  Executable: /vendor/bin/hw/android.hardware.uwb-service
+                                                                                                    Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+                                                                                                    pid: 2137, ppid: 1, tid: 2137, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+                                                                                                    uid: 1083
+                                                                                                    tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+                                                                                                    pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+                                                                                                    signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+                                                                                                    Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+
+                                                                                                        x0  0000000000000000  x1  0000000000000859  x2  0000000000000006  x3  00007fffe64bd6c0
+                                                                                                        x4  6462687564631f6b  x5  6462687564631f6b  x6  6462687564631f6b  x7  7f7f7f7f7f7f7f7f
+                                                                                                        x8  00000000000000f0  x9  2b416f50a7bfe1ce  x10 000000ff00000020  x11 000000000006c000
+                                                                                                        x12 000000007fffffff  x13 000000000041f0de  x14 000000636ee8dc05  x15 0000000029aaaaab
+                                                                                                        x16 000077fdd6f436f8  x17 000077fdd6f27fc0  x18 000077fdd8a80000  x19 0000000000000859
+                                                                                                        x20 0000000000000859  x21 00000000ffffffff  x22 00007fffe64bd850  x23 000059d8a6d0a9c0
+                                                                                                        x24 000059d8a6d10600  x25 00007fffe64bdfe0  x26 00007fffe64bd9f0  x27 000077fdd8366e80
+                                                                                                        x28 00007fffe64be7d8  x29 00007fffe64bd740
+                                                                                                        lr  000077fdd6ec48ec  sp  00007fffe64bd6c0  pc  000077fdd6ec4910  pst 0000000000001000
+                                                                                                        esr 0000000000000000  vg  0000000000000000
+
+                                                                                                    18 total frames
+                                                                                                    backtrace:
+                                                                                                          #00 pc 0000000000078910  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: c4b1f4a2273ae85d0a136e4d0a3aafa0)
+                                                                                                          #01 pc 000000000003e284  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #02 pc 000000000003bda8  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #03 pc 00000000000387d8  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #04 pc 000000000002cf48  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+16) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #05 pc 00000000000387cc  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+8) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #06 pc 000000000003c0b0  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+276) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #07 pc 0000000000037f24  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+60) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #08 pc 00000000000387f8  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+28) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #09 pc 0000000000025f2c  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+36) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #10 pc 0000000000025df8  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+72) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #11 pc 000000000006209c  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+6288) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #12 pc 0000000000065e18  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+2712) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #13 pc 0000000000063940  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+540) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+2026-10-21 12:53:26.081  2146-2146  DEBUG                   com.example.practice1                A        #14 pc 000000000006011c  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+32) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #15 pc 000000000003b6b0  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+620) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #16 pc 00000000000687a0  /vendor/bin/hw/android.hardware.uwb-service (main+56) (BuildId: 8d8402af21e3e4939ff08b7bb72f3227)
+                                                                                                          #17 pc 000000000006fae4  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: c4b1f4a2273ae85d0a136e4d0a3aafa0)
+
+                                                                                                    Note: To display stack pointer information, use the pbtombstone tool:
+                                                                                                            pbtombstone --display-sp tombstone_XX.pb
+2026-10-21 12:53:36.125  2292-2292  libc                    com.example.practice1                A  Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2292 (android.hardwar), pid 2292 (android.hardwar)
+2026-10-21 12:53:36.187  2315-2315  ActivityThread          com.example.practice1                D  Set OS env TMPDIR to /data/user_de/0/com.google.android.nfc/cache
+2026-10-21 14:08:28.380   676-745   PackageManager          system_server                        E  Error occurred while checking alignment of package : com.example.practice1
+2026-10-21 14:08:30.679  2130-2130  libprocessgroup         com.example.practice1                I  Created cgroup /sys/fs/cgroup/apps/uid_10235
+2026-10-21 14:08:30.687  2130-2130  libprocessgroup         com.example.practice1                I  Created cgroup /sys/fs/cgroup/apps/uid_10235/pid_2130
+2026-10-21 14:08:31.227  2130-2130  Zygote                  com.example.practice1                I  Process 2130 created for com.example.practice1
+2026-10-21 14:08:31.229  2130-2130  ample.practice1         com.example.practice1                I  Late-enabling -Xcheck:jni
+2026-10-21 14:08:31.507  2130-2130  ample.practice1         com.example.practice1                I  Using generational CollectorTypeCMC GC.
+2026-10-21 14:08:32.611  2130-2130  nativeloader            com.example.practice1                D  Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+2026-10-21 14:08:34.142  2130-2130  CompatChangeReporter    com.example.practice1                D  Compat change id reported: 333566037; UID 10235; state: ENABLED
+2026-10-21 14:08:34.587  2130-2130  nativeloader            com.example.practice1                D  Configuring clns-9 for other apk /data/app/~~MuEHaSg2q0ftRtjGHZ3bCg==/com.example.practice1-P0LH95x4LsEjbl5XcALlhw==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~MuEHaSg2q0ftRtjGHZ3bCg==/com.example.practice1-P0LH95x4LsEjbl5XcALlhw==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.practice1
+2026-10-21 14:08:34.626  2130-2130  ActivityThread          com.example.practice1                D  Set OS env TMPDIR to /data/user/0/com.example.practice1/cache
+2026-10-21 14:08:34.630  2130-2130  GraphicsEnvironment     com.example.practice1                V  Currently set values for:
+2026-10-21 14:08:34.630  2130-2130  GraphicsEnvironment     com.example.practice1                V    angle_gl_driver_selection_pkgs=[]
+2026-10-21 14:08:34.630  2130-2130  GraphicsEnvironment     com.example.practice1                V    angle_gl_driver_selection_values=[]
+2026-10-21 14:08:34.630  2130-2130  GraphicsEnvironment     com.example.practice1                V  com.example.practice1 is not listed in per-application setting
+2026-10-21 14:08:34.631  2130-2130  GraphicsEnvironment     com.example.practice1                V  No special selections for ANGLE, returning default driver choice
+2026-10-21 14:08:34.632  2130-2130  GraphicsEnvironment     com.example.practice1                V  Neither updatable production driver nor prerelease driver is supported.
+2026-10-21 14:08:34.634  2130-2130  CompatChangeReporter    com.example.practice1                D  Compat change id reported: 407952621; UID 10235; state: ENABLED
+2026-10-21 14:08:34.634  2130-2130  CompatChangeReporter    com.example.practice1                D  Compat change id reported: 419020719; UID 10235; state: ENABLED
+2026-10-21 14:08:34.804  2130-2255  DisplayManager          com.example.practice1                I  Choreographer implicitly registered for the refresh rate.
+2026-10-21 14:08:34.813  2130-2130  ProtoLog                com.example.practice1                I  ProtoLog ready to log to logcat
+2026-10-21 14:08:34.819  2130-2130  ample.practice1         com.example.practice1                D  Initializing ProtoLog
+2026-10-21 14:08:34.819  2130-2130  ProtoLog                com.example.practice1                D  Initializing ProtoLog DataSource
+2026-10-21 14:08:34.849  2130-2130  ProtoLogConfigListener  com.example.practice1                I  Connected and registered client with 1 groups to ProtoLogConfigurationService (viewerConfig=null)
+2026-10-21 14:08:34.905  2130-2255  GFXSTREAM               com.example.practice1                I  [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+2026-10-21 14:08:34.910  2130-2255  GFXSTREAM               com.example.practice1                I  [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+2026-10-21 14:08:34.910  2130-2255  libc                    com.example.practice1                W  Access denied finding property "vendor.mesa.virtgpu.kumquat"
+2026-10-21 14:08:34.918  2130-2130  AppCompatDelegate       com.example.practice1                D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-10-21 14:08:34.974  2130-2255  HWUI                    com.example.practice1                W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2026-10-21 14:08:34.974  2130-2255  HWUI                    com.example.practice1                W  Failed to initialize 101010-2 format, error = EGL_SUCCESS
+2026-10-21 14:08:35.099  2130-2130  ample.practice1         com.example.practice1                I  hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=37) using reflection: allowed
+2026-10-21 14:08:35.128  2130-2130  MainActivityLog         com.example.practice1                D  onCreate: Главный экран создан
+2026-10-21 14:08:35.130  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:08:35.155  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:08:35.161  2130-2130  CompatChangeReporter    com.example.practice1                D  Compat change id reported: 418924588; UID 10235; state: ENABLED
+2026-10-21 14:08:35.168  2130-2130  HWUI                    com.example.practice1                W  Unknown dataspace 0
+2026-10-21 14:08:35.184  2130-2288  libc                    com.example.practice1                W  Access denied finding property "vendor.mesa.virtgpu.kumquat"
+2026-10-21 14:08:35.196  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@ca2cadf
+2026-10-21 14:08:35.212  2130-2292  CompatChangeReporter    com.example.practice1                D  Compat change id reported: 458413887; UID 10235; state: ENABLED
+2026-10-21 14:08:35.223  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@ca2cadf
+2026-10-21 14:08:35.252  2130-2130  VRI[MainActivity]       com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:08:35.283  2130-2130  HWUI                    com.example.practice1                I  Using FreeType backend (prop=Auto)
+2026-10-21 14:08:35.351  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-0 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:35.351  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:36.040  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:08:36.040  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:24ff658c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:08:36.173  2507-2863  Finsky                  com.android.vending                  E  [52] ItemStore: getItems RPC failed for item com.example.practice1
+2026-10-21 14:08:36.213  2507-2881  Finsky                  com.android.vending                  E  [53] ItemStore: getItems RPC failed for item com.example.practice1
+2026-10-21 14:08:37.379  2130-2136  ample.practice1         com.example.practice1                I  Compiler allocated 4558KB to compile void android.view.ViewRootImpl.performTraversals(long)
+2026-10-21 14:08:39.971  2130-2416  ProfileInstaller        com.example.practice1                D  Installing profile for com.example.practice1
+2026-10-21 14:08:41.447  2130-2130  MainActivityLog         com.example.practice1                I  Открытие экрана справки
+2026-10-21 14:08:41.527  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:08:41.726  2130-2130  HelpActivityLog         com.example.practice1                D  onCreate: Экран справки открыт
+2026-10-21 14:08:41.729  2130-2130  HelpActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:08:41.777  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@c67287f
+2026-10-21 14:08:41.777  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@c67287f
+2026-10-21 14:08:41.778  2130-2130  VRI[HelpActivity]       com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:08:41.834  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-1 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:41.837  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[HelpActivity]#1(BLAST Consumer)1 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:42.444  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:08:42.444  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:7ecdcaa2: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:08:42.600  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:08:49.002  2130-2130  HelpActivityLog         com.example.practice1                D  Нажата кнопка возврата из справки
+2026-10-21 14:08:49.280  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:08:49.280  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:08:49.439  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-2 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:49.441  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#2(BLAST Consumer)2 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:49.945  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:08:49.945  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:49b6efec: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:08:50.156  2130-2130  VRI[HelpActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:08:50.181  2130-2130  HelpActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:08:50.183  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:08:50.197  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: null
+2026-10-21 14:08:50.205  2130-2130  HelpActivityLog         com.example.practice1                D  onDestroy
+2026-10-21 14:08:50.208  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:08:50.741  2130-2130  MainActivityLog         com.example.practice1                I  Переход на экран конвертации. Категория: Длина
+2026-10-21 14:08:50.808  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:08:50.954  2130-2130  ConverterActivityLog    com.example.practice1                D  onCreate: Экран конвертации создан
+2026-10-21 14:08:50.954  2130-2130  ConverterActivityLog    com.example.practice1                D  Получена категория: Длина
+2026-10-21 14:08:50.979  2130-2130  ConverterActivityLog    com.example.practice1                D  onStart
+2026-10-21 14:08:51.068  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@7663883
+2026-10-21 14:08:51.069  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:08:51.071  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@7663883
+2026-10-21 14:08:51.104  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-3 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:51.105  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[ConverterActivity]#3(BLAST Consumer)3 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:51.779  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:08:51.779  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:eb7b011e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:08:51.903  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:08:51.977  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:08:53.102  2130-2130  AutofillManager         com.example.practice1                I  showAutofillDialog() return false due to improve fill dialog
+2026-10-21 14:08:53.103  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:4a382106: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser true userId 0 displayId 0
+2026-10-21 14:08:53.104  2130-2130  InsetsController        com.example.practice1                D  show(ime())
+2026-10-21 14:08:53.104  2130-2130  InsetsController        com.example.practice1                D  Setting requestedVisibleTypes to 511 (was 503)
+2026-10-21 14:08:53.118  2130-2130  AssistStructure         com.example.practice1                I  Flattened final assist data: 2084 bytes, containing 1 windows, 8 views
+2026-10-21 14:08:53.324  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@bd6e990
+2026-10-21 14:08:53.324  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.view.ImeBackAnimationController@bd6e990
+2026-10-21 14:08:53.745  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: ime:[0,0,0,883]
+2026-10-21 14:08:53.757  2130-2130  InteractionJankMonitor  com.example.practice1                W  Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.example.practice1
+2026-10-21 14:08:53.964  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:4a382106: onShown
+2026-10-21 14:08:54.350  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@7663883
+2026-10-21 14:08:54.351  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@7663883
+2026-10-21 14:08:54.429  2130-2130  CompatChangeReporter    com.example.practice1                D  Compat change id reported: 417951523; UID 10235; state: ENABLED
+2026-10-21 14:08:54.510  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: ime:[0,0,0,842]
+2026-10-21 14:08:54.548  2130-2130  ImeTracker              com.example.practice1                I  system_server:0819f28b: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+2026-10-21 14:08:54.595  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: ime:[0,0,0,659]
+2026-10-21 14:08:54.629  2130-2130  ImeTracker              com.example.practice1                I  system_server:09fd666c: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+2026-10-21 14:08:54.776  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: ime:null
+2026-10-21 14:08:54.819  2130-2130  ImeTracker              com.example.practice1                I  system_server:9ce2d10e: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+2026-10-21 14:08:56.547  2130-2130  ConverterActivityLog    com.example.practice1                I  Успешная конвертация: 56.0 -> 5600.0 см
+2026-10-21 14:08:58.952  2130-2130  ConverterActivityLog    com.example.practice1                D  Нажата кнопка Назад
+2026-10-21 14:08:59.114  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:08:59.115  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:08:59.115  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:08:59.181  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-4 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:59.191  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#4(BLAST Consumer)4 with slotExpansion=1 for 64 slots
+2026-10-21 14:08:59.428  2130-2130  ImeTracker              com.example.practice1                I  system_server:d8891d75: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+2026-10-21 14:08:59.900  2130-2146  HWUI                    com.example.practice1                I  Davey! duration=716ms; Flags=1, FrameTimelineVsyncId=119951, IntendedVsync=15472166954360, Vsync=15472166954360, InputEventId=0, HandleInputStart=15472168202799, AnimationStart=15472168203507, PerformTraversalsStart=15472168216757, DrawStart=15472416374174, FrameDeadline=15472500296756, FrameStartTime=15472168200215, FrameInterval=16666665, WorkloadTarget=16666666, AnimationTime=15472166954360, AnimationCounter=-1, SyncQueued=15472418575590, SyncStart=15472427140799, IssueDrawCommandsStart=15472427161007, SwapBuffers=15472471948757, FrameCompleted=15472891529257, DequeueBufferDuration=414575626, QueueBufferDuration=1123458, GpuCompleted=15472887625674, SwapBuffersCompleted=15472891529257, DisplayPresentTime=0, CommandSubmissionCompleted=15472471948757,
+2026-10-21 14:09:00.041  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:09:00.041  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:c08507e0: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:09:00.182  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:09:00.223  2130-2130  AutofillManager         com.example.practice1                I  onInvisibleForAutofill(): expiringResponse
+2026-10-21 14:09:00.226  2130-2130  ConverterActivityLog    com.example.practice1                D  onStop
+2026-10-21 14:09:00.228  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:09:00.228  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: null
+2026-10-21 14:09:00.229  2130-2130  ConverterActivityLog    com.example.practice1                D  onDestroy
+2026-10-21 14:09:00.243  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:09:00.264  2130-2130  ImeTracker              com.example.practice1                I  system_server:a749d14a: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+2026-10-21 14:09:00.264  2130-2130  RemoteInpu...ectionImpl com.example.practice1                W  requestCursorUpdates on inactive InputConnection
+2026-10-21 14:09:01.128  2130-2130  MainActivityLog         com.example.practice1                I  Переход на экран конвертации. Категория: Масса
+2026-10-21 14:09:01.191  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:09:01.257  2130-2130  ConverterActivityLog    com.example.practice1                D  onCreate: Экран конвертации создан
+2026-10-21 14:09:01.257  2130-2130  ConverterActivityLog    com.example.practice1                D  Получена категория: Масса
+2026-10-21 14:09:01.259  2130-2130  ConverterActivityLog    com.example.practice1                D  onStart
+2026-10-21 14:09:01.347  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@4598955
+2026-10-21 14:09:01.349  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@4598955
+2026-10-21 14:09:01.356  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:09:01.377  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-5 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:01.378  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[ConverterActivity]#5(BLAST Consumer)5 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:02.030  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:09:02.098  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:09:02.129  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab120322e0 (RippleDrawable) with handle 0xb4007facc206dae0
+2026-10-21 14:09:02.247  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:09:02.252  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:b76b339a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:09:02.957  2130-2130  AssistStructure         com.example.practice1                I  Flattened final assist data: 2084 bytes, containing 1 windows, 8 views
+2026-10-21 14:09:05.311  2130-2130  ConverterActivityLog    com.example.practice1                I  Успешная конвертация: 889.0 -> 889000.0 г
+2026-10-21 14:09:06.732  2130-2130  ConverterActivityLog    com.example.practice1                D  Нажата кнопка Назад
+2026-10-21 14:09:06.831  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:09:06.831  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:09:06.851  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-6 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:06.852  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#6(BLAST Consumer)6 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:07.297  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:09:07.298  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:d97ceb1c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:09:07.394  2130-2130  RemoteInpu...ectionImpl com.example.practice1                W  requestCursorUpdates on inactive InputConnection
+2026-10-21 14:09:07.504  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:09:07.558  2130-2130  AutofillManager         com.example.practice1                I  onInvisibleForAutofill(): expiringResponse
+2026-10-21 14:09:07.558  2130-2130  ConverterActivityLog    com.example.practice1                D  onStop
+2026-10-21 14:09:07.560  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:09:07.572  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: null
+2026-10-21 14:09:07.572  2130-2130  ConverterActivityLog    com.example.practice1                D  onDestroy
+2026-10-21 14:09:07.576  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab12054c80 (RippleDrawable) with handle 0xb4007facc2071d10
+2026-10-21 14:09:07.576  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:09:08.815  2130-2130  MainActivityLog         com.example.practice1                I  Переход на экран конвертации. Категория: Валюта
+2026-10-21 14:09:08.912  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:09:08.991  2130-2130  ConverterActivityLog    com.example.practice1                D  onCreate: Экран конвертации создан
+2026-10-21 14:09:08.996  2130-2130  ConverterActivityLog    com.example.practice1                D  Получена категория: Валюта
+2026-10-21 14:09:09.000  2130-2130  ConverterActivityLog    com.example.practice1                D  onStart
+2026-10-21 14:09:09.239  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@9ba5b53
+2026-10-21 14:09:09.241  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:09:09.242  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@9ba5b53
+2026-10-21 14:09:09.353  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-7 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:09.362  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[ConverterActivity]#7(BLAST Consumer)7 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:10.208  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:09:10.208  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:76830f88: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:09:10.209  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:09:10.262  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:09:10.994  2130-2130  AssistStructure         com.example.practice1                I  Flattened final assist data: 2088 bytes, containing 1 windows, 8 views
+2026-10-21 14:09:12.242  2130-2130  ConverterActivityLog    com.example.practice1                I  Успешная конвертация: 89.0 -> 40050.0 KZT
+2026-10-21 14:09:14.384  2130-2130  ConverterActivityLog    com.example.practice1                D  Нажата кнопка Назад
+2026-10-21 14:09:14.461  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:09:14.464  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:09:14.464  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:09:14.494  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-8 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:14.502  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#8(BLAST Consumer)8 with slotExpansion=1 for 64 slots
+2026-10-21 14:09:14.906  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:09:14.906  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:070a3f17: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:09:14.968  2130-2130  RemoteInpu...ectionImpl com.example.practice1                W  requestCursorUpdates on inactive InputConnection
+2026-10-21 14:09:15.114  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:09:15.158  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab12066e30 (RippleDrawable) with handle 0xb4007facc2076cc0
+2026-10-21 14:09:15.165  2130-2130  AutofillManager         com.example.practice1                I  onInvisibleForAutofill(): expiringResponse
+2026-10-21 14:09:15.165  2130-2130  ConverterActivityLog    com.example.practice1                D  onStop
+2026-10-21 14:09:15.166  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:09:15.166  2130-2130  ConverterActivityLog    com.example.practice1                D  onDestroy
+2026-10-21 14:09:15.167  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:11:11.148  2130-2130  MainActivityLog         com.example.practice1                I  Открытие экрана справки
+2026-10-21 14:11:11.371  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:11:11.613  2130-2130  HelpActivityLog         com.example.practice1                D  onCreate: Экран справки открыт
+2026-10-21 14:11:11.614  2130-2130  HelpActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:11:11.712  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@6be7cd1
+2026-10-21 14:11:11.713  2130-2130  VRI[HelpActivity]       com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:11:11.719  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@6be7cd1
+2026-10-21 14:11:11.754  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-9 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:11.756  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[HelpActivity]#9(BLAST Consumer)9 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:12.269  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:12.269  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:b24372f9: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:12.448  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:12.478  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:11:13.144  2130-2130  HelpActivityLog         com.example.practice1                D  Нажата кнопка возврата из справки
+2026-10-21 14:11:13.257  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:11:13.259  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:11:13.281  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-10 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:13.281  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#10(BLAST Consumer)10 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:13.813  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:13.813  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:3d949039: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:13.923  2130-2130  VRI[HelpActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:13.946  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab12068e60 (RippleDrawable) with handle 0xb4007facc207d500
+2026-10-21 14:11:14.014  2130-2130  HelpActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:11:14.015  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:11:14.016  2130-2130  HelpActivityLog         com.example.practice1                D  onDestroy
+2026-10-21 14:11:14.017  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:11:14.294  2130-2130  MainActivityLog         com.example.practice1                I  Переход на экран конвертации. Категория: Валюта
+2026-10-21 14:11:14.342  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:11:14.393  2130-2130  ConverterActivityLog    com.example.practice1                D  onCreate: Экран конвертации создан
+2026-10-21 14:11:14.394  2130-2130  ConverterActivityLog    com.example.practice1                D  Получена категория: Валюта
+2026-10-21 14:11:14.396  2130-2130  ConverterActivityLog    com.example.practice1                D  onStart
+2026-10-21 14:11:14.490  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@7fe24e1
+2026-10-21 14:11:14.491  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:11:14.491  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@7fe24e1
+2026-10-21 14:11:14.528  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-11 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:14.532  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[ConverterActivity]#11(BLAST Consumer)11 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:15.221  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:15.221  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:f1ae49e0: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:15.343  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:15.344  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:11:15.361  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab12031c70 (RippleDrawable) with handle 0xb4007facc207ba60
+2026-10-21 14:11:16.153  2130-2130  ConverterActivityLog    com.example.practice1                W  Поле ввода пустое
+2026-10-21 14:11:17.541  2130-2130  ConverterActivityLog    com.example.practice1                D  Нажата кнопка Назад
+2026-10-21 14:11:17.709  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:11:17.710  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:11:17.743  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-12 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:17.745  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#12(BLAST Consumer)12 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:18.236  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:18.236  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:e75e8c3d: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:18.403  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:18.489  2130-2130  ConverterActivityLog    com.example.practice1                D  onStop
+2026-10-21 14:11:18.490  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:11:18.490  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: null
+2026-10-21 14:11:18.490  2130-2130  ConverterActivityLog    com.example.practice1                D  onDestroy
+2026-10-21 14:11:18.492  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab12077620 (RippleDrawable) with handle 0xb4007facc2080860
+2026-10-21 14:11:18.492  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:11:19.182  2130-2130  MainActivityLog         com.example.practice1                I  Переход на экран конвертации. Категория: Масса
+2026-10-21 14:11:19.283  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:11:19.397  2130-2130  ConverterActivityLog    com.example.practice1                D  onCreate: Экран конвертации создан
+2026-10-21 14:11:19.397  2130-2130  ConverterActivityLog    com.example.practice1                D  Получена категория: Масса
+2026-10-21 14:11:19.404  2130-2130  ConverterActivityLog    com.example.practice1                D  onStart
+2026-10-21 14:11:19.530  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@f54e7c8
+2026-10-21 14:11:19.530  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:11:19.533  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@f54e7c8
+2026-10-21 14:11:19.557  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-13 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:19.558  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[ConverterActivity]#13(BLAST Consumer)13 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:20.222  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:20.222  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:f6c2058d: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:20.223  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:20.294  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:11:21.045  2130-2130  ConverterActivityLog    com.example.practice1                W  Поле ввода пустое
+2026-10-21 14:11:22.349  2130-2130  ConverterActivityLog    com.example.practice1                D  Нажата кнопка Назад
+2026-10-21 14:11:22.515  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:11:22.515  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:11:22.564  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-14 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:22.572  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#14(BLAST Consumer)14 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:23.012  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:23.013  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:4d5d89ae: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:23.318  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:23.367  2130-2130  ConverterActivityLog    com.example.practice1                D  onStop
+2026-10-21 14:11:23.368  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:11:23.368  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: null
+2026-10-21 14:11:23.368  2130-2130  ConverterActivityLog    com.example.practice1                D  onDestroy
+2026-10-21 14:11:23.372  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+2026-10-21 14:11:24.080  2130-2130  MainActivityLog         com.example.practice1                I  Переход на экран конвертации. Категория: Длина
+2026-10-21 14:11:24.177  2130-2130  MainActivityLog         com.example.practice1                D  onPause
+2026-10-21 14:11:24.267  2130-2130  ConverterActivityLog    com.example.practice1                D  onCreate: Экран конвертации создан
+2026-10-21 14:11:24.267  2130-2130  ConverterActivityLog    com.example.practice1                D  Получена категория: Длина
+2026-10-21 14:11:24.274  2130-2130  ConverterActivityLog    com.example.practice1                D  onStart
+2026-10-21 14:11:24.391  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@a5c8feb
+2026-10-21 14:11:24.392  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  WindowInsets changed: 1080x2400 statusBars:[0,136,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,168,0,84]
+2026-10-21 14:11:24.394  2130-2292  WindowOnBackDispatcher  com.example.practice1                D  setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@a5c8feb
+2026-10-21 14:11:24.428  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-15 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:24.440  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[ConverterActivity]#15(BLAST Consumer)15 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:24.881  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:24.881  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:2d5466e9: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:25.171  2130-2130  VRI[MainActivity]       com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:25.193  2130-2130  MainActivityLog         com.example.practice1                D  onStop
+2026-10-21 14:11:25.847  2130-2130  ConverterActivityLog    com.example.practice1                W  Поле ввода пустое
+2026-10-21 14:11:27.264  2130-2130  ConverterActivityLog    com.example.practice1                D  Нажата кнопка Назад
+2026-10-21 14:11:27.402  2130-2130  MainActivityLog         com.example.practice1                D  onStart
+2026-10-21 14:11:27.402  2130-2130  MainActivityLog         com.example.practice1                D  onResume
+2026-10-21 14:11:27.429  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer unnamed-2130-16 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:27.431  2130-2130  Surface                 com.example.practice1                I  Creating surface for consumer VRI[MainActivity]#16(BLAST Consumer)16 with slotExpansion=1 for 64 slots
+2026-10-21 14:11:27.590  2130-2130  InsetsController        com.example.practice1                D  hide(ime())
+2026-10-21 14:11:27.590  2130-2130  ImeTracker              com.example.practice1                I  com.example.practice1:0c9a0838: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-10-21 14:11:28.055  2130-2130  VRI[ConverterActivity]  com.example.practice1                D  visibilityChanged oldVisibility=true newVisibility=false
+2026-10-21 14:11:28.071  2130-2255  HWUI                    com.example.practice1                D  endAllActiveAnimators on 0xb4007fab1208b190 (RippleDrawable) with handle 0xb4007facc208c320
+2026-10-21 14:11:28.087  2130-2130  ConverterActivityLog    com.example.practice1                D  onStop
+2026-10-21 14:11:28.087  2130-2130  WindowOnBackDispatcher  com.example.practice1                D  setTopOnBackInvokedCallback (unwrapped): null
+2026-10-21 14:11:28.088  2130-2130  ConverterActivityLog    com.example.practice1                D  onDestroy
+2026-10-21 14:11:28.091  2130-2130  ViewRootImpl            com.example.practice1                D  Skipping stats log for color mode
+

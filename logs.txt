@@ -1,0 +1,96 @@
+--------- beginning of main
+10-21 14:08:35.128  2130  2130 D MainActivityLog: onCreate: Главный экран создан
+10-21 14:08:35.130  2130  2130 D MainActivityLog: onStart
+10-21 14:08:35.155  2130  2130 D MainActivityLog: onResume
+10-21 14:08:41.447  2130  2130 I MainActivityLog: Открытие экрана справки
+10-21 14:08:41.527  2130  2130 D MainActivityLog: onPause
+10-21 14:08:41.726  2130  2130 D HelpActivityLog: onCreate: Экран справки открыт
+10-21 14:08:41.729  2130  2130 D HelpActivityLog: onStart
+10-21 14:08:42.600  2130  2130 D MainActivityLog: onStop
+10-21 14:08:49.002  2130  2130 D HelpActivityLog: Нажата кнопка возврата из справки
+10-21 14:08:49.280  2130  2130 D MainActivityLog: onStart
+10-21 14:08:49.280  2130  2130 D MainActivityLog: onResume
+10-21 14:08:50.181  2130  2130 D HelpActivityLog: onStop
+10-21 14:08:50.205  2130  2130 D HelpActivityLog: onDestroy
+10-21 14:08:50.741  2130  2130 I MainActivityLog: Переход на экран конвертации. Категория: Длина
+10-21 14:08:50.808  2130  2130 D MainActivityLog: onPause
+10-21 14:08:50.954  2130  2130 D ConverterActivityLog: onCreate: Экран конвертации создан
+10-21 14:08:50.954  2130  2130 D ConverterActivityLog: Получена категория: Длина
+10-21 14:08:50.979  2130  2130 D ConverterActivityLog: onStart
+10-21 14:08:51.977  2130  2130 D MainActivityLog: onStop
+10-21 14:08:56.547  2130  2130 I ConverterActivityLog: Успешная конвертация: 56.0 -> 5600.0 см
+10-21 14:08:58.952  2130  2130 D ConverterActivityLog: Нажата кнопка Назад
+10-21 14:08:59.115  2130  2130 D MainActivityLog: onStart
+10-21 14:08:59.115  2130  2130 D MainActivityLog: onResume
+10-21 14:09:00.226  2130  2130 D ConverterActivityLog: onStop
+10-21 14:09:00.229  2130  2130 D ConverterActivityLog: onDestroy
+10-21 14:09:01.128  2130  2130 I MainActivityLog: Переход на экран конвертации. Категория: Масса
+10-21 14:09:01.191  2130  2130 D MainActivityLog: onPause
+10-21 14:09:01.257  2130  2130 D ConverterActivityLog: onCreate: Экран конвертации создан
+10-21 14:09:01.257  2130  2130 D ConverterActivityLog: Получена категория: Масса
+10-21 14:09:01.259  2130  2130 D ConverterActivityLog: onStart
+10-21 14:09:02.098  2130  2130 D MainActivityLog: onStop
+10-21 14:09:05.311  2130  2130 I ConverterActivityLog: Успешная конвертация: 889.0 -> 889000.0 г
+10-21 14:09:06.732  2130  2130 D ConverterActivityLog: Нажата кнопка Назад
+10-21 14:09:06.831  2130  2130 D MainActivityLog: onStart
+10-21 14:09:06.831  2130  2130 D MainActivityLog: onResume
+10-21 14:09:07.558  2130  2130 D ConverterActivityLog: onStop
+10-21 14:09:07.572  2130  2130 D ConverterActivityLog: onDestroy
+10-21 14:09:08.815  2130  2130 I MainActivityLog: Переход на экран конвертации. Категория: Валюта
+10-21 14:09:08.912  2130  2130 D MainActivityLog: onPause
+10-21 14:09:08.991  2130  2130 D ConverterActivityLog: onCreate: Экран конвертации создан
+10-21 14:09:08.996  2130  2130 D ConverterActivityLog: Получена категория: Валюта
+10-21 14:09:09.000  2130  2130 D ConverterActivityLog: onStart
+10-21 14:09:10.262  2130  2130 D MainActivityLog: onStop
+10-21 14:09:12.242  2130  2130 I ConverterActivityLog: Успешная конвертация: 89.0 -> 40050.0 KZT
+10-21 14:09:14.384  2130  2130 D ConverterActivityLog: Нажата кнопка Назад
+10-21 14:09:14.464  2130  2130 D MainActivityLog: onStart
+10-21 14:09:14.464  2130  2130 D MainActivityLog: onResume
+10-21 14:09:15.165  2130  2130 D ConverterActivityLog: onStop
+10-21 14:09:15.166  2130  2130 D ConverterActivityLog: onDestroy
+10-21 14:11:11.148  2130  2130 I MainActivityLog: Открытие экрана справки
+10-21 14:11:11.371  2130  2130 D MainActivityLog: onPause
+10-21 14:11:11.613  2130  2130 D HelpActivityLog: onCreate: Экран справки открыт
+10-21 14:11:11.614  2130  2130 D HelpActivityLog: onStart
+10-21 14:11:12.478  2130  2130 D MainActivityLog: onStop
+10-21 14:11:13.144  2130  2130 D HelpActivityLog: Нажата кнопка возврата из справки
+10-21 14:11:13.257  2130  2130 D MainActivityLog: onStart
+10-21 14:11:13.259  2130  2130 D MainActivityLog: onResume
+10-21 14:11:14.014  2130  2130 D HelpActivityLog: onStop
+10-21 14:11:14.016  2130  2130 D HelpActivityLog: onDestroy
+10-21 14:11:14.294  2130  2130 I MainActivityLog: Переход на экран конвертации. Категория: Валюта
+10-21 14:11:14.342  2130  2130 D MainActivityLog: onPause
+10-21 14:11:14.393  2130  2130 D ConverterActivityLog: onCreate: Экран конвертации создан
+10-21 14:11:14.394  2130  2130 D ConverterActivityLog: Получена категория: Валюта
+10-21 14:11:14.396  2130  2130 D ConverterActivityLog: onStart
+10-21 14:11:15.344  2130  2130 D MainActivityLog: onStop
+10-21 14:11:16.153  2130  2130 W ConverterActivityLog: Поле ввода пустое
+10-21 14:11:17.541  2130  2130 D ConverterActivityLog: Нажата кнопка Назад
+10-21 14:11:17.709  2130  2130 D MainActivityLog: onStart
+10-21 14:11:17.710  2130  2130 D MainActivityLog: onResume
+10-21 14:11:18.489  2130  2130 D ConverterActivityLog: onStop
+10-21 14:11:18.490  2130  2130 D ConverterActivityLog: onDestroy
+10-21 14:11:19.182  2130  2130 I MainActivityLog: Переход на экран конвертации. Категория: Масса
+10-21 14:11:19.283  2130  2130 D MainActivityLog: onPause
+10-21 14:11:19.397  2130  2130 D ConverterActivityLog: onCreate: Экран конвертации создан
+10-21 14:11:19.397  2130  2130 D ConverterActivityLog: Получена категория: Масса
+10-21 14:11:19.404  2130  2130 D ConverterActivityLog: onStart
+10-21 14:11:20.294  2130  2130 D MainActivityLog: onStop
+10-21 14:11:21.045  2130  2130 W ConverterActivityLog: Поле ввода пустое
+10-21 14:11:22.349  2130  2130 D ConverterActivityLog: Нажата кнопка Назад
+10-21 14:11:22.515  2130  2130 D MainActivityLog: onStart
+10-21 14:11:22.515  2130  2130 D MainActivityLog: onResume
+10-21 14:11:23.367  2130  2130 D ConverterActivityLog: onStop
+10-21 14:11:23.368  2130  2130 D ConverterActivityLog: onDestroy
+10-21 14:11:24.080  2130  2130 I MainActivityLog: Переход на экран конвертации. Категория: Длина
+10-21 14:11:24.177  2130  2130 D MainActivityLog: onPause
+10-21 14:11:24.267  2130  2130 D ConverterActivityLog: onCreate: Экран конвертации создан
+10-21 14:11:24.267  2130  2130 D ConverterActivityLog: Получена категория: Длина
+10-21 14:11:24.274  2130  2130 D ConverterActivityLog: onStart
+10-21 14:11:25.193  2130  2130 D MainActivityLog: onStop
+10-21 14:11:25.847  2130  2130 W ConverterActivityLog: Поле ввода пустое
+10-21 14:11:27.264  2130  2130 D ConverterActivityLog: Нажата кнопка Назад
+10-21 14:11:27.402  2130  2130 D MainActivityLog: onStart
+10-21 14:11:27.402  2130  2130 D MainActivityLog: onResume
+10-21 14:11:28.087  2130  2130 D ConverterActivityLog: onStop
+10-21 14:11:28.088  2130  2130 D ConverterActivityLog: onDestroy
